@@ -17,13 +17,13 @@ app.post('/vehicle/search-garage', (request, response) => {
   response.send([
     {
       "id": 2,
-      "garage_name": "garage v1",
-      "address": "123 AAA",
+      "garage_name": "Nova 4x4 Viet Nam",
+      "address": "80 Nguyen Hoang, Da Nang, VietNam",
       "city": "Danang",
       "country": "Viet nam",
       "lat": 16.68,
       "lon": 108.68,
-      "logo": "http://#",
+      "logo": "https://i.pinimg.com/originals/b0/90/8b/b0908b8a063cff3898c4bd371ca60db4.jpg",
       "rcs_number": 123,
       "vat_number": 456,
       "is_brand_representation": 1,
@@ -38,8 +38,65 @@ app.post('/vehicle/search-garage', (request, response) => {
       "insurance_accepted_id": 1,
       "licensed_insurance_id": 1,
       "payment_method_id": 1
+    },
+    {
+      id: 3,
+      garage_name: 'Jean Medecin Garage',
+      address: '25 rue Robert Latouche, France',
+      city: 'Danang',
+      country: 'Viet nam',
+      lat: 16.68,
+      lon: 106.68,
+      logo: 'https://cdn.motor1.com/images/mgl/xW1Jw/s1/lamborghini-cost.jpg',
+      rcs_number: 123,
+      vat_number: 456,
+      is_brand_representation: 1,
+      is_brand_subsidiary: 1,
+      status: 1,
+      holiday_start: 1234567890,
+      holiday_end: 1234567890,
+      description: 'texttexttexttexttexttext',
+      user_id: 2,
+      type_garage_id: 1,
+      category_vehicle_id: 1,
+      insurance_accepted_id: 1,
+      licensed_insurance_id: 1,
+      payment_method_id: 1
     }
   ]);
+})
+
+app.get('/car-owner/favorite', (_, response) => {
+  response.send([
+    {
+      id: 3,
+      garage_name: 'Jean Medecin Garage',
+      address: '25 rue Robert Latouche, France',
+      city: 'Danang',
+      country: 'Viet nam',
+      lat: 16.68,
+      lon: 106.68,
+      logo: 'https://cdn.motor1.com/images/mgl/xW1Jw/s1/lamborghini-cost.jpg',
+      rcs_number: 123,
+      vat_number: 456,
+      is_brand_representation: 1,
+      is_brand_subsidiary: 1,
+      status: 1,
+      holiday_start: 1234567890,
+      holiday_end: 1234567890,
+      description: 'texttexttexttexttexttext',
+      user_id: 2,
+      type_garage_id: 1,
+      category_vehicle_id: 1,
+      insurance_accepted_id: 1,
+      licensed_insurance_id: 1,
+      payment_method_id: 1
+    }
+  ])
+})
+
+app.post('/car-owner/favorite', (_, res) => {
+  res.send({})
 })
 
 app.listen(port, function () {
