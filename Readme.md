@@ -1,9 +1,6 @@
-# AutoLease Ninja Middleware
+# Automoto mocking data
 
-Middleware application for
-
-  - Connect client side to firebase API
-  - Connect client side to Saleforce API
+This will return mock data to client side
 
 # Required software/application
 
@@ -33,7 +30,7 @@ $ heroku login
 ```
 Heroku app setting up
 ```sh
-$ heroku git:remote -a autolease-ninja-middleware
+$ heroku git:remote -a automoto-mocking
 ```
 Deploy to heroku
 ```sh

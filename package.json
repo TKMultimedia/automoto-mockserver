@@ -1,7 +1,7 @@
 {
-  "name": "autolease-ninja-middleware",
-  "version": "1.0.0",
-  "description": "Middleware for autolease",
+  "name": "automoto-mockserver",
+  "version": "1.0.1",
+  "description": "Mock server for automoto",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:foxysun/autolease-ninja-middleware.git"
+    "url": "git@github.com:TKMultimedia/automoto-mockserver.git"
   },
-  "author": "Foxysun",
+  "author": "ThienKhoi Tran",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
