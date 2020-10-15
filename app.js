@@ -44,7 +44,7 @@ app.get('/vehicle/search-garage', (request, response) => {
           0
         ],
         "payment_methods": [
-          "TPB"
+          1, 2
         ],
         "type_garages": [
           "moto"
@@ -87,7 +87,7 @@ app.get('/vehicle/search-garage', (request, response) => {
           0
         ],
         "payment_methods": [
-          "TPB"
+          1
         ],
         "type_garages": [
           "moto"
